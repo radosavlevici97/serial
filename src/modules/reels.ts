@@ -218,7 +218,7 @@ export class Reels {
                 position: target+(i*4),
                 //17.9
                 duration: time+(i*0.0558333333*4),
-                //delay: i * 0.05,
+                delay: i * 0.05,
                 ease:CustomEase.create("custom", "M0,0 C0.178,0.178 0.142,0.144 0.178,0.178 0.26,0.256 0.178,0.179 0.5,0.5 0.664,0.664 0.709,0.708 0.762,0.758 0.8,0.794 0.762,0.758 1,1 "),
                // ease:"back.inOut(0.0)",
                 onComplete: () => {
