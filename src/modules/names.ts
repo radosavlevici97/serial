@@ -21,9 +21,9 @@ export namespace Names {
     export class Misc {
         public static NUMBER_OF_SYMBOLS: number = 11;
 
-        public static SYMBOL_WIDTH = 162.2;
-        public static SYMBOL_HEIGHT = 193;
+        public static SYMBOL_WIDTH = 202.8;
+        public static SYMBOL_HEIGHT = 242;
         public static NUMBER_OF_SYMBOLS_PER_WHEEL = 6;
-        public static TARGET_VALUE = 35;
+        public static TARGET_VALUE = 36;
     }
 }

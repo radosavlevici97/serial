@@ -72,7 +72,7 @@ export class Reels {
             this._reelsSpriteSheet.textures[Names.SpriteNames.REELS]
         );
         this._reelsSprite.anchor.set(0.5);
-        this._reelsSprite.scale.set(0.8);
+        //this._reelsSprite.scale.set(0.8);
         this._reelsSprite.x = this._app.screen.width / 2+10;
         this._reelsSprite.y = this._app.screen.height / 2 + 25;
         this._app.stage.addChild(this._reelsSprite);
@@ -83,7 +83,7 @@ export class Reels {
             this._reelsSpriteSheet.textures[Names.SpriteNames.OVERGROUND]
         );
         this._overgroundSprite.anchor.set(0.5);
-        this._overgroundSprite.scale.set(0.8);
+        //this._overgroundSprite.scale.set(0.8);
         this._overgroundSprite.x = this._app.screen.width / 2;
         this._overgroundSprite.y = this._app.screen.height / 2 - 5 + 25;
     }
@@ -93,7 +93,7 @@ export class Reels {
             this._reelsSpriteSheet.textures[Names.SpriteNames.BETLAMP]
         );
         this._betLamp.anchor.set(0.5);
-        this._betLamp.scale.set(0.8);
+        //this._betLamp.scale.set(0.8);
         //-this._reelsSprite.width/5/2-2*this._reelsSprite.width/5
         //-this._betLamp.height-this._reelsSprite.height
         this._betLamp.x = this._reelsSprite.x-this._betLamp.width;
@@ -106,7 +106,7 @@ export class Reels {
             this._reelsSpriteSheet.textures[Names.SpriteNames.LEFTITEM]
         );
         this._leftItem.anchor.set(0.5);
-        this._leftItem.scale.set(0.8);
+        //this._leftItem.scale.set(0.8);
         //-this._reelsSprite.width/5/2-2*this._reelsSprite.width/5
         //-this._leftItem.height-this._reelsSprite.height
         this._leftItem.x = this._reelsSprite.x-this._leftItem.width/1.5-2-this._reelsSprite.width/2;
@@ -212,13 +212,14 @@ export class Reels {
         for (let i = 0; i < this._reels.length; i++) {
             const r: Types.reelType = this._reels[i];
             const target = r.position + Names.Misc.TARGET_VALUE;
-            const time = 2.5;
+            const time = 2;
             gsap.registerPlugin(CustomEase);
             gsap.to(r, {
-                position: target,
-                duration: time,
-                delay: i * 0.15,
-                ease:"back.inOut(0.6)",
+                position: target+i*3,
+                duration: time+i*0.17,
+                delay: i * 0.05,
+                ease:CustomEase.create("custom", "M0,0 C0.45,0.442 0.478,0.467 0.536,0.53 0.606,0.606 0.588,0.582 1,1 "),
+               // ease:"back.inOut(0.0)",
                 onComplete: () => {
                     i === this._reels.length - 1 ? this.reelsComplete(callback) : null;
                 },
