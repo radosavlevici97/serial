@@ -212,13 +212,14 @@ export class Reels {
         for (let i = 0; i < this._reels.length; i++) {
             const r: Types.reelType = this._reels[i];
             const target = r.position + Names.Misc.TARGET_VALUE;
-            const time = 2;
+            const time = 1.34;
             gsap.registerPlugin(CustomEase);
             gsap.to(r, {
-                position: target+i*3,
-                duration: time+i*0.17,
-                delay: i * 0.05,
-                ease:CustomEase.create("custom", "M0,0 C0.45,0.442 0.478,0.467 0.536,0.53 0.606,0.606 0.588,0.582 1,1 "),
+                position: target+(i*4),
+                //17.9
+                duration: time+(i*0.0558333333*4),
+                //delay: i * 0.05,
+                ease:CustomEase.create("custom", "M0,0 C0.178,0.178 0.142,0.144 0.178,0.178 0.26,0.256 0.178,0.179 0.5,0.5 0.664,0.664 0.709,0.708 0.762,0.758 0.8,0.794 0.762,0.758 1,1 "),
                // ease:"back.inOut(0.0)",
                 onComplete: () => {
                     i === this._reels.length - 1 ? this.reelsComplete(callback) : null;

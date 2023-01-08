@@ -24,6 +24,6 @@ export namespace Names {
         public static SYMBOL_WIDTH = 202.8;
         public static SYMBOL_HEIGHT = 242;
         public static NUMBER_OF_SYMBOLS_PER_WHEEL = 6;
-        public static TARGET_VALUE = 36;
+        public static TARGET_VALUE = 24;
     }
 }
