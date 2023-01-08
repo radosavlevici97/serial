@@ -13,9 +13,10 @@ export class UiAssets {
     private _buttonStaticTexture: Texture;
     private _pragmaticTexture: Texture;
     private _pragmaticLogoSprite: Sprite;
-
+    private _callback:Function;
     private _slot: Reels;
-    constructor(slot: Reels, bundle, app: Application) {
+    constructor(callback:Function, slot,bundle, app: Application) {
+        this._callback=callback;
         this._bundle = bundle;
         this._app = app;
         this._slot = slot;
@@ -60,6 +61,7 @@ export class UiAssets {
             this._app.screen.width - this._pragmaticLogoSprite.width;
         this._app.stage.addChild(this._buttonSprite);
         this._app.stage.addChild(this._pragmaticLogoSprite);
+        this._callback();
     }
 
     public turnOffButton(): void {

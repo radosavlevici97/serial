@@ -1,5 +1,5 @@
 import * as PIXI from 'pixi.js';
-
+import gsap from "gsap";
 import {Application} from "pixi.js";
 import {LoadManifest} from "./load-manifest";
 import {LoadBundle} from "./load-bundle";
@@ -7,6 +7,7 @@ import {Names} from "./names";
 import {Background} from "./background";
 import {Reels} from "./reels";
 import {UiAssets} from "./ui-assets";
+import {AssetsInfoCommand} from "./asset-info-command";
 
 export class SlotGame {
     private app: PIXI.Application;
@@ -24,30 +25,37 @@ export class SlotGame {
         this.loadManifest();
     }
 
-    public  loadManifest():void {
+    private  loadManifest():void {
         new LoadManifest(this.loadBundle.bind(this));
     }
 
-    public loadBundle():void{
+    private loadBundle():void{
         this._bundle = new LoadBundle(this.initModules.bind(this));
         this._bundle.setBundleName=Names.BundlesNames.MAIN_SCREEN;
         this._bundle.loadBundle();
 
     }
 
-    public initModules():void{
+    private initModules():void{
         this.initBackground();
     }
-    public initBackground():void{
+    private initBackground():void{
         new Background(this.initReels.bind(this),this._bundle,this.app);
     }
-    public initReels():void{
+    private initReels():void{
         this._slot= new Reels(this.initUiAssets.bind(this), this._bundle, this.app);
     }
 
-    public initUiAssets():void{
-        new UiAssets(this._slot, this._bundle, this.app);
+    private initUiAssets():void{
+        new UiAssets(this.initAssetsInfo.bind(this),this._slot, this._bundle, this.app);
     }
+    private initAssetsInfo():void{
+        const delaycall = gsap.delayedCall(1, ()=>{
+            new AssetsInfoCommand();
+            delaycall.kill();
+        });
+    }
+
 }
 
 
