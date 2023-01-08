@@ -1,0 +1,20 @@
+{
+  "name": "Serial",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "node esbuild.script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.11.17",
+    "esbuild": "^0.16.9",
+    "esbuild-plugin-lodash": "^1.2.0",
+    "gsap": "^3.11.3",
+    "lodash": "^4.17.21",
+    "pixi.js": "^7.0.5"
+  },
+  "target": "es2015"
+}

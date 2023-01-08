@@ -1,0 +1,32 @@
+{
+   "bundles":[
+      {
+
+
+
+         "name":"mainScreen",
+         "assets":[
+            {
+               "name":"backgroundSheet",
+               "srcs":"assets/background/backgroundSheet.json"
+            },
+            {
+               "name":"reelsSheet",
+               "srcs":"assets/reels/reelsSheet.json"
+            },
+		    {
+              "name":"symbolsSheet",
+              "srcs":"assets/symbols/symbolsSheet.json"
+		    },
+		    {
+		      "name":"uiAssetsSheet",
+               "srcs":"assets/ui/uiAssetsSheet.json"
+		    }
+         ]
+
+      }
+
+
+   ]
+
+}

@@ -1,0 +1,103 @@
+{"frames": {
+
+"Symbol-1.png":
+{
+	"frame": {"x":0,"y":0,"w":134,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":134,"h":156},
+	"sourceSize": {"w":134,"h":156}
+},
+"Symbol-2.png":
+{
+	"frame": {"x":0,"y":156,"w":134,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":134,"h":156},
+	"sourceSize": {"w":134,"h":156}
+},
+"Symbol-3.png":
+{
+	"frame": {"x":0,"y":312,"w":134,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":134,"h":156},
+	"sourceSize": {"w":134,"h":156}
+},
+"Symbol-4.png":
+{
+	"frame": {"x":0,"y":468,"w":134,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":134,"h":156},
+	"sourceSize": {"w":134,"h":156}
+},
+"Symbol-5.png":
+{
+	"frame": {"x":0,"y":624,"w":134,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":134,"h":156},
+	"sourceSize": {"w":134,"h":156}
+},
+"Symbol-6.png":
+{
+	"frame": {"x":0,"y":780,"w":134,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":134,"h":156},
+	"sourceSize": {"w":134,"h":156}
+},
+"Symbol-7.png":
+{
+	"frame": {"x":0,"y":936,"w":134,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":134,"h":156},
+	"sourceSize": {"w":134,"h":156}
+},
+"Symbol-8.png":
+{
+	"frame": {"x":0,"y":1092,"w":134,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":134,"h":156},
+	"sourceSize": {"w":134,"h":156}
+},
+"Symbol-9.png":
+{
+	"frame": {"x":0,"y":1248,"w":134,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":134,"h":156},
+	"sourceSize": {"w":134,"h":156}
+},
+"Symbol-10.png":
+{
+	"frame": {"x":0,"y":1404,"w":134,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":134,"h":156},
+	"sourceSize": {"w":134,"h":156}
+},
+"Symbol-11.png":
+{
+	"frame": {"x":0,"y":1560,"w":133,"h":157},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":133,"h":157},
+	"sourceSize": {"w":133,"h":157}
+}},
+"animations": {
+	"Symbol": ["Symbol-1.png","Symbol-2.png","Symbol-3.png","Symbol-4.png","Symbol-5.png","Symbol-6.png","Symbol-7.png","Symbol-8.png","Symbol-9.png","Symbol-10.png","Symbol-11.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "symbolsSheet.png",
+	"format": "RGBA8888",
+	"size": {"w":134,"h":1717},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c977587319b08c329b5fcf0d86c07cc9:6c6c973af8734bd59624e4de30060a99:c54ff67c6625b9bf02ce1e9d8497e4aa$"
+}
+}

@@ -1,0 +1,44 @@
+{"frames": {
+
+"BetLamp.png":
+{
+	"frame": {"x":0,"y":968,"w":208,"h":993},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":208,"h":993},
+	"sourceSize": {"w":208,"h":993}
+},
+"LeftItem.png":
+{
+	"frame": {"x":0,"y":0,"w":84,"h":712},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":84,"h":712},
+	"sourceSize": {"w":84,"h":712}
+},
+"Overground.png":
+{
+	"frame": {"x":208,"y":968,"w":1074,"h":1004},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1074,"h":1004},
+	"sourceSize": {"w":1074,"h":1004}
+},
+"ReelsArea.png":
+{
+	"frame": {"x":84,"y":0,"w":1014,"h":968},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1014,"h":968},
+	"sourceSize": {"w":1014,"h":968}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "reelsSheet.png",
+	"format": "RGBA8888",
+	"size": {"w":1282,"h":1972},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:b295c75ef1dd49a81a6a6dcef809bf9f:c1d9052c40d3e31dac4b2fbc5430b321:802a04982db448d1dc18d8970b5220b5$"
+}
+}
