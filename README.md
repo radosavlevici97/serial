@@ -8,15 +8,15 @@
    Commit messages must also be very detailed to understand exactly what was done at certain stages of the game's development.
    I built this game without paying attention to design patterns and SOLID principles. 
    If I had made a more complex game, I would have thought before starting the code, about the structure of the game in such a way 
-   that the SOLID principles are not violated, and about what design patterns can be applied to make the code easier to maintain and reuse.
+   that the SOLID principles are not violated, and about what design patterns can be applied to make the code easier to maintain and reuse (MVC or ECS is must).
    
 3. To build the game, one of these three commands must be run in the terminal, depending on the package manager you have installed (nodejs must be installed as well): 
-      yarn install
-      npm install
+      yarn install / 
+      npm install /
       pnpm install   (I use this one, from my point of view, pnpm is the best). 
    Then you need to run: 
-      yarn build 
-      npm build 
+      yarn build / 
+      npm build /
       pnpm build. 
    When you run this command, esbuild.script.js will be called and it will build the game very quickly, much faster than webpack. 
    In this script there is also a part of code that copies the game resources (some spritesheets and images and json files) from src to public. 
