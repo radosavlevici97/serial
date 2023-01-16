@@ -1,6 +1,6 @@
 # serial
 
-1. This is a basic spinnable slot. It has no feature, or gain, or paytable/preloader. All you can do is spin the wheels.
+1. This is a basic spinnable slot. It has no feature, or gain, or paytable/preloader. All you can do is spin the wheels. I used PixiJs, Lodash and GSAP as external libraries.
 
 2. This code is not a code to be delivered in production, it is a code under development that I made to practice programming. 
    In order to be delivered in production, this code needs a lot of refactoring, removing hardcoded values, adding explicit 
@@ -10,7 +10,10 @@
    If I had made a more complex game, I would have thought before starting the code, about the structure of the game in such a way 
    that the SOLID principles are not violated, and about what design patterns can be applied to make the code easier to maintain and reuse (Ex: MVC, factory, builder,      strategy, observer, state, decorator).
    
-3. To build the game, one of these three commands must be run in the terminal, depending on the package manager you have installed (nodejs must be installed as well): 
+3. To clone the repo you must have installed git, and you can open git bash terminal inside of the folder you want to clone the repo, and run this command:  
+   git clone https://github.com/radosavlevici97/serial.git
+
+4. To build the game, one of these three commands must be run in the terminal, depending on the package manager you have installed (nodejs must be installed as well): 
       yarn install / 
       npm install /
       pnpm install   (I use this one, from my point of view, pnpm is the best). 
