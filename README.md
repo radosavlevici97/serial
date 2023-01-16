@@ -8,7 +8,7 @@
    Commit messages must also be very detailed to understand exactly what was done at certain stages of the game's development.
    I built this game without paying attention to design patterns and SOLID principles. 
    If I had made a more complex game, I would have thought before starting the code, about the structure of the game in such a way 
-   that the SOLID principles are not violated, and about what design patterns can be applied to make the code easier to maintain and reuse (MVC or ECS is must).
+   that the SOLID principles are not violated, and about what design patterns can be applied to make the code easier to maintain and reuse (Ex: MVC, factory, builder,      strategy, observer, state).
    
 3. To build the game, one of these three commands must be run in the terminal, depending on the package manager you have installed (nodejs must be installed as well): 
       yarn install / 
